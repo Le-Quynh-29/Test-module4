@@ -19,17 +19,6 @@ export class ListComponent implements OnInit {
     this.loadData()
   }
 
-
-  deleteBook(id: number) {
-    this.service.deleteBook(id)
-      .subscribe(
-        (data: any)=>{
-          console.log(data);
-          this.loadData();
-        },
-        (error: any)=>console.log(error));
-  }
-
   loadData(){
     this.service.getBookList().subscribe(
       (      data: any)=>{

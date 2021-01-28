@@ -10,6 +10,7 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { CreateComponent } from './create/create.component';
 import { UpdateComponent } from './update/update.component';
 import { DetailComponent } from './detail/detail.component';
+import { DeleteComponent } from './delete/delete.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { DetailComponent } from './detail/detail.component';
     ListComponent,
     CreateComponent,
     UpdateComponent,
-    DetailComponent
+    DetailComponent,
+    DeleteComponent
   ],
   imports: [
     BrowserModule,

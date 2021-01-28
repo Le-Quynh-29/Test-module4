@@ -15,7 +15,7 @@
             <td>{{val.author}}</td>
             <td>
                 <a routerLink="update/{{val.id}}" class="btn btn-info">Cập nhập</a>
-                <button (click)="deleteBook(val.id)" class="btn btn-danger">Xóa</button>
+                <button routerLink="delete/{{val.id}}"  class="btn btn-danger">Xóa</button>
             </td>
         </tr>
     </tbody>
