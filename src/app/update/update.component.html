@@ -1,0 +1,22 @@
+<h1>Cập nhập sách</h1>
+<form>
+
+    <div class="mb-3">
+        <label for="disabledTextInput" class="form-label">Tên sách
+
+        </label>
+        <input type="text" name="title" id="title" class="form-control" style="width: 500px;" [(ngModel)]="book.title">
+    </div>
+    <div class="mb-3">
+        <label class="form-label"> Tác giả </label>
+        <input type="text" id="author" name="author" class="form-control" style="width: 500px;"
+            [(ngModel)]="book.author">
+    </div>
+    <div class="mb-3">
+        <label class="form-label">Mô tả</label>
+        <textarea type="text" id="description" class="form-control" name="description" style="width: 500px;height: 150px;" [(ngModel)]="book.description"></textarea>
+    </div>
+
+    <button type="submit" class="btn btn-primary" (click)="edit()">Cập nhập</button>
+    <button type="submit" class="btn btn-secondary" (click)="gotoList()">Thoát</button>
+</form>
